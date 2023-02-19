@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.4;
+  }
+  
+  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .container {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .produk {
+    border: 4px solid black;
+    width: 825px;
+    margin: 50px auto;
+    position: relative;
+  }
+  
+  .judulProduk {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #f7f7f7;
+    padding: 15px;
+  }
+  
+  .infoProduk {
+    flex: 1;
+    margin-top: 20px;
+  }
+  
+  .hargaProduk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .harga {
+    font-size: 24px;
+  }
+  
+  .ship {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .sale {
+    background-color: #ec2f2f;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 7px 15px;
+    display: inline-block;
+    position: absolute;
+    top: -17px;
+    left: -38px;
+  
+  }
+  
+  .deskripsiProduk {
+    margin-bottom: 10px;
+  }
+  
+  .linkInfo:link, .linkInfo:visited {
+    color: black;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  
+  .linkInfo:hover, .linkInfo:active {
+    text-decoration: none;
+  }
+  
+  .warnaProduk {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .warna {
+    background-color: #000;
+    height: 22px;
+    width: 22px;
+  }
+  
+  .biru {
+    background-color: #2f6ee2;
+  }
+  .merah {
+    background-color: #ec2f2f;
+  }
+  .kuning {
+    background-color: #f0bf1e;
+  }
+  .hijau {
+    background-color: #90cc20;
+  }
+  .coklat {
+    background-color: #885214;
+  }
+  
+  .detilProduk {
+    margin-top: 20px;
+    flex: 1;
+  }
+  
+  .judulDetail {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .listDetail {
+    list-style: square;
+    margin-left: 20px;
+  }
+  
+  .details-list li {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border-top: 4px solid black;
+  }
+  
+  .btn:hover {
+    color: #000;
+    background-color: #fff;
+  }
