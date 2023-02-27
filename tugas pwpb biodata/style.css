@@ -1,171 +1,422 @@
-@font-face {
-    font-family: valo;
-    src: url(/asset/fonts/valo.ttf);
-}
+ @font-face {
+     font-family: valo;
+     src: url(asset/fonts/valo.ttf);
+ }
 
-@font-face{
-    font-family: tugsten;
-    src: url(/asset/fonts/tugsten.ttf);
-}
+ @font-face {
+     font-family: tugsten;
+     src: url(asset/fonts/tugsten.ttf);
+ }
 
-*{
-    color: white;
+ @font-face {
+    font-family: oxygen;
+    src: url(asset/fonts/Oxygen-Bold.ttf);
+ }
+
+ * {
+     color: white;
+     margin: 0;
+     padding: 0;
+ }
+
+ body,
+ html {
+     height: 100%;
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
+ }
 
-body{
-    background-color: #fa4454;
-}
+ body {
+     background-color: #fa4454;
+ }
 
-/* navbar */
+ /* navbar */
 
-nav{
+ nav {
+     position: relative;
+     background-color: black;
+     height: 3rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     background-attachment: fixed;
+     width: 100%;
+     z-index: 99;
+ }
+
+ .initial {
+     left: auto;
+     margin-left: 5px;
+ }
+
+ .letter {
+     font-family: valo;
+     font-size: 2rem;
+     cursor: default;
+     color: #fa4454;
+ }
+
+
+ .link {
+     width: fit-content;
+     position: relative;
+     display: flex;
+     margin-right: 5px;
+ }
+
+ a {
+     font-family: tugsten;
+     text-transform: uppercase;
+     text-align: center;
+     font-size: 1.3rem;
+     letter-spacing: 3px;
+     text-decoration: none;
+     padding: 10px;
+     transition: 0.25s;
+ }
+
+ a:hover {
+     color: violet;
+     transform: translateY(-3px);
+     cursor: pointer;
+ }
+
+
+ a:active {
+     color: turquoise;
+     transform: translateY(0.5px);
+     transition: 0s;
+ }
+
+ /* akhir navbar */
+
+ /* parallax */
+ .op-container {
     position: relative;
-    background-color: black;
-    height: 3rem;
+    top: 50%;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+
 }
 
-.initial{
-    left: auto;
-    margin-left: 5px;
-}
-
-.letter{
-    font-family: valo;
-    font-size: 2rem;
-    cursor: default;
-    color: #fa4454;
-}
-
-
-.link{
-    width: fit-content;
-    position: relative;
-    display: flex;
-    margin-right: 5px;
-}
-
-a{
-    font-family: tugsten;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.3rem;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 10px;
-    transition: 0.25s;
-}
-
-a:hover{
-    color: violet;
-    transform: translateY(-3px);
-}
-
-
-a:active{
-    color: turquoise;
-    transform: translateY(0.5px);
-    transition: 0s;  
-}
-
-/* akhir navbar */
-
-/* profile */
-article{
-    position: relative;
-    top: 15vh;
-    transition: 1s;
-}
-
-.container{
+.op {
     background-color: #364966;
+    box-shadow: 0 0 10px 0 black;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.txt-op {
+    font-family: valo;
+    font-size: 1.75rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+    cursor: default;
+}
+
+.parallax {
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-img1 {
+    background-image: url(asset/img/bg-img/random1.jpg);
+    ;
+}
+
+.parallax-img2 {
+    background-image: url(asset/img/bg-img/random2.jpg);
+}
+
+.parallax-img3 {
+    background-image: url(asset/img/bg-img/random3.png);
+}
+
+.parallax-img4{
+   background-image: url(asset/img/bg-img/random4.jpg);
+}
+
+.parallax-img5{
+   background-image: url(asset/img/bg-img/random5.jpg);
+}
+
+.parallax-img6{
+    background-image: url(asset/img/bg-img/random6.jpg);
+}
+
+.parallax-img7{
+    background-image: url(asset/img/bg-img/random7.jpg);
+}
+
+.parallax-img8{
+    background-image: url(asset/img/bg-img/random8.jpg);
+}
+
+.parallax-img9{
+    background-image: url(asset/img/bg-img/random9.jpg);
+}
+
+.parallax-img10{
+    background-image: url(asset/img/bg-img/random10.jpg);
+}
+
+.parallax-img11{
+    background-image: url(asset/img/bg-img/random11.jpg);
+}
+
+.parallax-img12{
+    background-image: url(asset/img/bg-img/random12.jpg);
+}
+
+.parallax-img-ayah{
+   background-image: url(asset/img/bg-img/ayah.jpg);
+}
+
+.parallax-img-ibu{
+    background-image: url(asset/img/bg-img/ibu.jpg);
+}
+
+.parallax-img-keluarga{
+    background-image: url(asset/img/bg-img/keluarga.jpg);
+}
+
+/* end parallax */
+
+
+ /* artikel */
+
+ /* short profile */
+
+ .container {
+     max-width: 960px;
+     margin: 0 auto;
+     padding-left: 2.5rem ;
+     padding-right: 2.5rem;
+     padding-top: 5rem;
+     padding-bottom: 5rem;
+     
+ }
+
+ .container-copyright {
+   
+    height: 2.5rem;
+    display: flex;
+    margin-left: 1rem;
+    justify-content: center;
+    margin-top: 0.75rem;
+    
+}
+
+.copyright{
+    font-family: oxygen;
+}
+
+ .short-profile {
+     display: flex;
+     align-items: center;
+    gap: 1rem;
+
+ }
+
+ .foto-profile1 {
+     border-radius: 50%;
+     width: 15rem;
+     object-fit: cover;
+     
+ }
+
+ .txt-profile {
+     margin-left: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+ }
+
+ .hello {
+     font-size: 50px;
+     text-transform: uppercase;
+     margin: 0;
+     font-family: tugsten;
+     letter-spacing: 25px;
+    color: #fa4454;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1.5px;
+ }
+
+ .nama {
+     font-size: 36px;
+     font-family: valo;
+     margin: 0;
+     letter-spacing:7.6px;
+ }
+
+ .deskripsi-singkat {
+     font-size: 24px;
+     margin: 0;
+     font-family: tugsten;
+     text-transform: uppercase;
+     letter-spacing: 12.9px;
+ }
+
+ /* akhir short profile */
+
+ /* biodata */
+    .biodata{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 5rem;
+    
+    }
+
+    .foto-profile2{
+        border-radius: 50%;
+        width: 15rem;
+        object-fit: cover;
+        margin-left: 30rem;
+        justify-content: left;
+        
+    }
+
+    .isi-biodata{
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    gap: 1rem;
+    }
+
+    .list-biodata{
+    font-family: oxygen;
+    font-size: 20px;
+    justify-content: right;
+    }
+
+ /* end biodata */
+
+/* about me */
+
+.aboutme{
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    padding: 1.25rem;
-    margin: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    gap: 5rem;
 }
 
-.pp{
-    height: 175px;
-    border-radius: 10px;
+.foto-profile3{
+    border-radius: 50%;
+        width: 15rem;
+        object-fit: cover;
 }
 
-.profile{
-    width: 100vw;
-    height: auto;
-    margin: 10px;
+.txt-aboutme{
+    
 }
 
-.nama{
-    font-family: tugsten ;
-    text-transform: uppercase;
-    letter-spacing: 6.5px;
+.isi-aboutme{
+    font-family: oxygen;
+    margin-top: 0.5rem;
 }
 
-.deskripsi{
-    margin-top: 10px;
+/* end about me */
+
+/* contact me */
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
 }
 
-.aboutMe{
+.txt-contact{
     font-family: valo;
-    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 2rem;
+    cursor: default;
 }
-
-.isiDeskripsi{
-    margin-top: 10px;
-    font-family: monospace;
-}
-
-
-/* akhir profile */
-
-/* kontak */
 
 .contact{
-    background-color: #042e27;
-    position: relative;
-    align-items: center;
-    bottom: 10px;
-    padding: 0.75rem;
-    margin: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: 10rem;
+    cursor: pointer;
+}
+    
+.svg-btn{
+    height: 5rem;
 }
 
-.contactMe{
-    position: absolute;
-    top: 5px;
-
-}
-
-.waBtn{
-    background-color: #25d366;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-top: 20px;
-    border-radius: 10px;
+.btn-contact{
+    height: 8rem;
     width: 8rem;
-    height: 3rem;
+    border-radius: 10px;
+    border: 5px solid black;
+    background-color: white;
     transition: 0.25s;
+    cursor: pointer;
 }
 
-.waBtn:hover{
-    background-color: #18813f;
-    transform: translateY(-5px);
+.btn-contact:hover{
+    background-color: violet;
+    transform: translateY(-2rem) scale(1.25);
 }
 
-.waBtn:active{
-    background-color: #25d366;
-    transform: translateY(1px);
+.btn-contact:active{
+    background-color: turquoise;
+    transform: translateY(0rem) scale(1);
 }
 
-/* akhir kontak */
+/* akhir contact me */
+
+ /* akhir artikel */
+
+/* keluarga */
+
+.family-member{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.txt-family{
+    font-family: valo;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    cursor: default;
+}
+
+.listfam{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.isifam{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: tugsten;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    
+}
+
+/* akhir keluarga */
+
+/* akhir artikel ayah */    

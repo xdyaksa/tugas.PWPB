@@ -1,0 +1,273 @@
+ @font-face {
+    font-family: valo;
+    src: url(/asset/fonts/valo.ttf);
+}
+
+@font-face{
+    font-family: tugsten;
+    src: url(/asset/fonts/tugsten.ttf);
+}
+
+*{
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    
+}
+
+body{
+    background-color: #fa4454;
+}
+
+/* navbar */
+
+nav{
+    position: relative;
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.initial{
+    left: auto;
+    margin-left: 5px;
+}
+
+.letter{
+    font-family: valo;
+    font-size: 2rem;
+    cursor: default;
+    color: #fa4454;
+}
+
+
+.link{
+    width: fit-content;
+    position: relative;
+    display: flex;
+    margin-right: 5px;
+}
+
+a{
+    font-family: tugsten;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.25s;
+}
+
+a:hover{
+    color: violet;
+    transform: translateY(-3px);
+}
+
+
+a:active{
+    color: turquoise;
+    transform: translateY(0.5px);
+    transition: 0s;  
+}
+
+/* akhir navbar */
+
+
+/* artikel */
+
+
+/* parallax */
+.op-container{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.op{
+    background-color: #364966 ;
+    box-shadow: 0 0 10px 0 black;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.txt-op{
+    font-family: valo;
+    font-size: 1.75rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.parallax{
+    height: 100%;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-img1{
+    background-image: url(asset/img/random1.jpg);
+    ;
+}
+
+.parallax-img2{
+    background-image: url(asset/img/random2.jpg);
+}
+
+.parallax-img3{
+    background-image: url(asset/img/random3.jpg);
+}
+
+/* end parallax */
+
+.container{
+    width: 100%;
+    height: auto;
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+}
+
+/* short profile */
+
+.short-profile{
+}
+
+.foto-profile{
+    width: 12.5rem;
+}
+
+.nama{
+    font-family: valo;
+    background-color: violet;
+}
+
+.deskripsi-singkat{
+    font-family: tugsten;
+    background-color: yellow;
+}
+
+/* akhir short profile */
+
+/* akhir artikel */
+
+
+
+/* XX */
+
+/* profile */
+/* article{
+    position: relative;
+    top: 15vh;
+    transition: 1s;
+}
+
+.container{
+    background-color: #364966;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 1.25rem;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pp{
+    height: 175px;
+    border-radius: 10px;
+}
+
+.profile{
+    width: 100vw;
+    height: auto;
+    margin: 10px;
+}
+
+.nama{
+    font-family: tugsten ;
+    text-transform: uppercase;
+    letter-spacing: 6.5px;
+}
+
+.deskripsi{
+    margin-top: 10px;
+}
+
+.aboutMe{
+    font-family: valo;
+    letter-spacing: 5px;
+}
+
+.isiDeskripsi{
+    margin-top: 10px;
+    font-family: monospace;
+} */
+
+
+/* akhir profile */
+
+/* kontak */
+
+/* .contact{
+    background-color: #042e27;
+    position: relative;
+    align-items: center;
+    bottom: 10px;
+    padding: 0.75rem;
+    margin: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contactMe{
+    position: absolute;
+    top: 5px;
+
+}
+
+.waBtn{
+    background-color: #25d366;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+    transition: 0.25s;
+}
+
+.waBtn:hover{
+    background-color: #18813f;
+    transform: translateY(-5px);
+}
+
+.waBtn:active{
+    background-color: #25d366;
+    transform: translateY(1px);
+} */
+
+/* akhir kontak */
