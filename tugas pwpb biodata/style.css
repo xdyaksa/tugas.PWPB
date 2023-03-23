@@ -133,7 +133,6 @@
 
 .parallax-img1 {
     background-image: url(asset/img/bg-img/random1.jpg);
-    ;
 }
 
 .parallax-img2 {
@@ -200,12 +199,6 @@
  /* short profile */
 
  .container {
-     max-width: 960px;
-     margin: 0 auto;
-     padding-left: 2.5rem ;
-     padding-right: 2.5rem;
-     padding-top: 5rem;
-     padding-bottom: 5rem;
      
  }
 
